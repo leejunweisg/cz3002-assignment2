@@ -12,7 +12,7 @@
             <result>/login.jsp</result>
         </action>
 
-        <action name="verify" class="action.VerifyLogin">
+        <action name="verify" class="action.VerifyAction">
             <result name="SUCCESS">/success.jsp</result>
             <result name="FAILURE">/failure.jsp</result>
         </action>

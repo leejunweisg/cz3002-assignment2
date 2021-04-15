@@ -1,8 +1,8 @@
 package action;
 import com.opensymphony.xwork2.ActionSupport;
-import model.User;
+import model.Account;
 
-public class VerifyLogin extends ActionSupport{
+public class VerifyAction extends ActionSupport{
     String username, password;
 
     public String getUsername() {
@@ -23,7 +23,7 @@ public class VerifyLogin extends ActionSupport{
 
     public String execute(){
         // call the authenticate method from the model
-        if (User.authenticate(username,password)){
+        if (Account.authenticate(username,password)){
             return "SUCCESS";
         }else{
             return "FAILURE";
