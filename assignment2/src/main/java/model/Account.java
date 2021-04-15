@@ -13,7 +13,7 @@ public class Account {
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/assignment2?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC", "testuser", "password123!");   // For MySQL only
 
             // set up sql statement
-            PreparedStatement prep_stmt = conn.prepareStatement("SELECT * FROM account WHERE username = ? AND password = ?");
+            PreparedStatement prep_stmt = conn.prepareStatement("SELECT * FROM accounts WHERE username = ? AND password = ?");
             prep_stmt.setString(1, username);
             prep_stmt.setString(2, password);
 

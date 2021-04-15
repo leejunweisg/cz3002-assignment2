@@ -8,7 +8,7 @@
     <constant name="struts.devMode" value="true" />
 
     <package name="assignment2" extends="struts-default">
-        <action name="login2">
+        <action name="login">
             <result>/login.jsp</result>
         </action>
 
